@@ -15,7 +15,7 @@ namespace Questao04
             Console.Write("Informe o seu nome: ");
             string nome = Console.ReadLine();
 
-            if (!validarEntradaVazia(nome))
+            if (!ValidarEntradaVazia(nome))
             {
                 Console.WriteLine("Nome inválido.");
                 return;
@@ -24,7 +24,7 @@ namespace Questao04
             Console.Write("Informe a sua idade: ");
             string idade = Console.ReadLine();
 
-            if (!validarIdade(idade)){
+            if (!ValidarIdade(idade)){
                 Console.WriteLine("Idade inválida");
                 return;
             }
@@ -32,7 +32,7 @@ namespace Questao04
             Console.Write("Informe o seu telefone (min: 8 | máx: 11 números): ");
             string telefone = Console.ReadLine();
 
-            if (!validarTelefone(telefone))
+            if (!ValidarTelefone(telefone))
             {
                 Console.WriteLine("Telefone inválido");
                 return;
@@ -41,7 +41,7 @@ namespace Questao04
             Console.Write("Informe o seu e-mail: ");
             string email = Console.ReadLine();
 
-            if (!validarEmail(email))
+            if (!ValidarEmail(email))
             {
                 Console.WriteLine("Email inválido");
                 return;
@@ -52,27 +52,27 @@ namespace Questao04
             Console.WriteLine("=========================");
         }
 
-        static bool validarEntradaVazia(string entrada)
+        static bool ValidarEntradaVazia(string entrada)
         {
             return !string.IsNullOrWhiteSpace(entrada);
         }
 
-        static bool validarIdade(string idade)
+        static bool ValidarIdade(string idade)
         {
-            return Regex.IsMatch(idade, @"^\d+$") && converterStringParaInt(idade) > 0;
+            return Regex.IsMatch(idade, @"^\d+$") && ConverterStringParaInt(idade) > 0;
         }
 
-        static bool validarTelefone(string telefone)
+        static bool ValidarTelefone(string telefone)
         {
             return Regex.IsMatch(telefone, @"^\d{8,11}$");
         }
 
-        static bool validarEmail(string email)
+        static bool ValidarEmail(string email)
         {
             return Regex.IsMatch(email, @"@{1}");
         }
 
-        static int converterStringParaInt(string numero)
+        static int ConverterStringParaInt(string numero)
         {
             return int.Parse(numero);
         }
