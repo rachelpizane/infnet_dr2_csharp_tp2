@@ -47,9 +47,9 @@ namespace Questao04
                 return;
             }
 
-            Console.WriteLine("== INFO ==============");
+            Console.WriteLine("== INFO =================");
             Console.WriteLine($"Nome: {nome} \nIdade: {idade} \nTelefone: {telefone} \nE-mail: {email}");
-            Console.WriteLine("======================");
+            Console.WriteLine("=========================");
         }
 
         static bool validarEntradaVazia(string entrada)
