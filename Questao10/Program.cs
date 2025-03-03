@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Questao10
 {
@@ -24,7 +21,7 @@ namespace Questao10
 
             List<int> numeros = new List<int>();
 
-            while(numero >= 0)
+            while (numero >= 0)
             {
                 numeros.Add(numero);
                 --numero;
@@ -45,3 +42,4 @@ namespace Questao10
         }
     }
 }
+
