@@ -22,7 +22,6 @@ namespace Questao08
             }
 
             double nota = ConverterStringParaDouble(sNota);
-
             string classificacao = "";
 
             if (nota < 2.5)
