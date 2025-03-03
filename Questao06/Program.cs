@@ -65,7 +65,7 @@ namespace Questao06
 
         static bool ValidarDecimal(string numero)
         {
-            return Regex.IsMatch(numero, @"^?\d+(.\d+)?$") && ConverterStringParaDouble(numero) > 0;
+            return Regex.IsMatch(numero, @"^\d+(.\d+)?$") && ConverterStringParaDouble(numero) > 0;
         }
 
         static double ConverterStringParaDouble(string numero)
