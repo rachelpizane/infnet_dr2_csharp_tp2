@@ -13,7 +13,7 @@ namespace Questao10
 
             if (!ValidarInteiro(sNumero))
             {
-                Console.WriteLine("Número inválido");
+                Console.WriteLine("Número inválido.");
                 return;
             }
 
@@ -24,7 +24,7 @@ namespace Questao10
             while (numero >= 0)
             {
                 numeros.Add(numero);
-                --numero;
+                numero--;
             }
 
             Console.WriteLine("== CONTAGEM REFRESSIVA =========");
