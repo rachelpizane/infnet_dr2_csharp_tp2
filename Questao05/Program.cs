@@ -27,7 +27,7 @@ namespace Questao05
             double tempKelvin = ConverterCelsiusParaKelvin(tempCelsius);
 
             Console.WriteLine("== CONVERSOR DE TEMPERATURA ========");
-            Console.WriteLine($" Celsius: {tempCelsius:F2} \nFahrenheit: {tempFahrenheit:F2} \nKelvin: {tempKelvin:F2}");
+            Console.WriteLine($"Celsius: {tempCelsius:F2} \nFahrenheit: {tempFahrenheit:F2} \nKelvin: {tempKelvin:F2}");
             Console.WriteLine("====================================");
 
         }

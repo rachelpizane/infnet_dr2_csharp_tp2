@@ -23,11 +23,8 @@ namespace Questao09
             }
 
             double salarioBruto = ConverterStringParaDouble(sSalarioBruto);
-
-
             double descontoImposto = CalcularImposto(salarioBruto);
 
-        
             double salarioLiquido = salarioBruto - descontoImposto;
 
             Console.WriteLine("== CALCULADORA DE SALARIO LIQUIDO ==============");
