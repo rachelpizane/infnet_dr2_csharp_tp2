@@ -7,5 +7,5 @@ INFNET - Análise e Desenvolvimento de Sistemas
 Fundamentos de Desenvolvimento com C#
 
 ## Status
-Andamento 🕗
+Concluído! ⭐
 <!--- {Não iniciado ⛔ | Andamento 🕗| Concluído! ⭐} --->
